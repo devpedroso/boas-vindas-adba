@@ -1,4 +1,4 @@
-import AnimatedSection from "../../../components/generic/AnimatedSection";
+import AnimatedSection from "../../components/AnimatedSection";
 
 const Tema = () => {
   const paragraph = (number, text) => {

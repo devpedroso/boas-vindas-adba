@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Button, Image } from "antd";
 import { CopyOutlined, CheckOutlined } from "@ant-design/icons";
 import { CopyToClipboard } from "react-copy-to-clipboard";
-import AnimatedSection from "../../../components/generic/AnimatedSection";
+import AnimatedSection from "../../components/AnimatedSection";
 
 const Contributions = () => {
   const [value, setValue] = useState("45275005000165");

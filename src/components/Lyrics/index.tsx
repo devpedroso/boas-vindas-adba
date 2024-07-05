@@ -1,7 +1,7 @@
 import { Collapse, Image } from "antd";
 
-import AnimatedSection from "../../../components/generic/AnimatedSection";
-import { AraryLyrics } from "../../../utils/Lyrics";
+import AnimatedSection from "../../components/AnimatedSection";
+import { AraryLyrics } from "../../utils/Lyrics";
 
 const Lyrics = () => {
   const items = Object.keys(AraryLyrics).map((item) => {

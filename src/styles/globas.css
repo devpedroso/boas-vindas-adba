@@ -47,6 +47,11 @@ p {
   font-size: 16px;
 }
 
+span {
+  font-family: "Good", sans-serif !important;
+  color: var(--complement);
+}
+
 .title {
   font-family: "Good", sans-serif !important;
   font-style: normal;
@@ -55,7 +60,6 @@ p {
 .title-secondary {
   font-family: "Obvia", sans-serif !important;
   font-style: normal;
-  font-weight: 400;
 }
 
 .container {
@@ -83,51 +87,9 @@ p {
     -25px 0px 20px -20px rgba(0, 0, 0, 0.45);
 }
 
-.ant-collapse-header {
-  display: flex;
-  align-items: center !important;
-}
-
-.ant-collapse-arrow svg {
-  color: var(--white);
-}
-
 .animate__animated.animate__fadeInDown,
 .animate__animated.animate__zoomIn,
 .animate__animated.animate__bounceInLeft,
 .animate__animated.animate__bounceInRight {
   --animate-duration: 2s;
-}
-
-.anticon svg {
-  font-size: 16px;
-  color: var(--black);
-}
-
-.ant-image-preview-operations,
-.ant-image-preview-close {
-  background-color: rgba(0, 0, 0, 1) !important;
-}
-
-.ant-image-preview-operations svg,
-.ant-image-preview-close svg,
-.ant-collapse-arrow svg {
-  color: var(--white) !important;
-}
-
-.pulse {
-  box-shadow: 0 0 32px black;
-  animation: pulsate 2s ease-out infinite;
-}
-
-@keyframes pulsate {
-  0% {
-    box-shadow: 0 0 12px black;
-  }
-  50% {
-    box-shadow: 0 0 32px black;
-  }
-  100% {
-    box-shadow: 0 0 12px black;
-  }
 }
