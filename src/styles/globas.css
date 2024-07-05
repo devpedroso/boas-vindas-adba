@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Noto Sans", sans-serif;
+  --animate-delay: 0.5s;
+
+  --white: #ffffff;
+  --black: #000000;
+  --primary: #8708e3;
+
+  --complement: #efc906;
+  --complement-100: #ffd700;
+
+  --analogous: #5a08e3;
+  --analogous-100: #e308dc;
+
+  --contrast: #4b4b4b;
+  --contrast-100: #cccccc;
+}
+
+@font-face {
+  font-family: "Good";
+  src: url("./fonts/Good\ Brush.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Obvia";
+  src: url("./fonts/Obvia\ md.otf") format("opentype");
+}
+
+body {
+  min-height: 100vh;
+  max-width: 768px;
+  margin: 0 auto;
+  background-image: url("../../public/assets/BG_LAND.png");
+  background-repeat: repeat-x;
+  background-size: 50% 100%;
+  height: 100%;
+}
+
+p {
+  font-family: "Obvia", sans-serif !important;
+  color: var(--white);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.title {
+  font-family: "Good", sans-serif !important;
+  font-style: normal;
+}
+
+.title-secondary {
+  font-family: "Obvia", sans-serif !important;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.container {
+  background-image: url("../../public/assets/BG_LAND.png");
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-background-repeat: no-repeat;
+  -webkit-background-position: center;
+  background-position: center;
+  width: 100%;
+  box-shadow: 25px 0px 20px -20px rgba(0, 0, 0, 0.45),
+    -25px 0px 20px -20px rgba(0, 0, 0, 0.45);
+}
+
+.container-tema {
+  background-image: url("../../public/assets/GRADE_TMJ20.png");
+  background-color: #000000;
+  background-repeat: repeat(auto-fill, 20px);
+  background-position: center;
+  background-size: 100vw;
+  box-shadow: 25px 0px 20px -20px rgba(0, 0, 0, 0.45),
+    -25px 0px 20px -20px rgba(0, 0, 0, 0.45);
+}
+
+.ant-collapse-header {
+  display: flex;
+  align-items: center !important;
+}
+
+.ant-collapse-arrow svg {
+  color: var(--white);
+}
+
+.animate__animated.animate__fadeInDown,
+.animate__animated.animate__zoomIn,
+.animate__animated.animate__bounceInLeft,
+.animate__animated.animate__bounceInRight {
+  --animate-duration: 2s;
+}
+
+.anticon svg {
+  font-size: 16px;
+  color: var(--black);
+}
+
+.ant-image-preview-operations,
+.ant-image-preview-close {
+  background-color: rgba(0, 0, 0, 1) !important;
+}
+
+.ant-image-preview-operations svg,
+.ant-image-preview-close svg,
+.ant-collapse-arrow svg {
+  color: var(--white) !important;
+}
+
+.pulse {
+  box-shadow: 0 0 32px black;
+  animation: pulsate 2s ease-out infinite;
+}
+
+@keyframes pulsate {
+  0% {
+    box-shadow: 0 0 12px black;
+  }
+  50% {
+    box-shadow: 0 0 32px black;
+  }
+  100% {
+    box-shadow: 0 0 12px black;
+  }
+}
