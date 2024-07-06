@@ -20,21 +20,31 @@ const App = () => {
         />
       </div>
 
-      <div className="flex gap-2 justify-center">
-        <div className="title text-white text-[24px] animate__animated animate__jackInTheBox">
+      <div className="flex gap-2 justify-center animate__animated animate__zoomIn animate__delay-0">
+        <div className="title text-white text-[24px] ">
           Seja bem-vindo à familia
         </div>
-        <div className="title text-[24px] text-[var(--complement)] animate__animated animate__jackInTheBox animate__delay-3s">
-          ADBA!
-        </div>
+        <div className="title text-[24px] text-[var(--complement)]">ADBA!</div>
       </div>
 
-
-      <div className="title-secondary text-white text-base text-center p-2 animate__animated animate__jackInTheBox">
+      <div className="title-secondary text-white text-base text-center p-2 animate__animated animate__zoomIn animate__delay-0">
         Temos uma mensagem para seu <span>coração</span>
       </div>
 
-      <div className="title text-center h-64 bg-white">VIDEO</div>
+      <video
+        id="video"
+        width="100%"
+        controls
+        controlsList="nodownload"
+        disablePictureInPicture
+        preload="auto"
+        autoPlay
+        muted
+      >
+        <source src="/assets/VIDEO_PASTOR.mov" type="video/webm" />
+        <source src="/assets/VIDEO_PASTOR.mp4" type="video/mp4" />
+        Seu browser não tem suporte para esse video.
+      </video>
 
       <WorshipDate />
       <SocialMedia />
