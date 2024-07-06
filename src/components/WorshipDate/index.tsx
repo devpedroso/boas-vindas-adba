@@ -1,5 +1,3 @@
-import { ClockCircleOutlined } from "@ant-design/icons";
-
 const WorshipDate = () => {
   const whorshipItem = (day, hour, title) => {
     return (
