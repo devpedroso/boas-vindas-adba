@@ -3,7 +3,7 @@ import AnimatedSection from "../AnimatedSection";
 const WorshipDate = () => {
   const whorshipItem = (day, hour, title) => {
     return (
-      <AnimatedSection animate="animate__lightSpeedInRight animate__delay-0s">
+      <AnimatedSection animate="animate__zoomIn animate__delay-0s">
         <div className="flex flex-col items-center leading-6">
           {day && (
             <div className="text-[24px] title-secondary text-white py-2 font-bold">
