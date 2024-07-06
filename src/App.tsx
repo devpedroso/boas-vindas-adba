@@ -14,13 +14,13 @@ const App = () => {
         <Image
           src="/assets/TAMO_JUNTO_LOGO.png"
           alt=""
-          className="animate__animated animate__fadeInDown p-10"
-          width={375}
+          className="animate__animated animate__fadeInDown p-6"
+          width={92}
           preview={false}
         />
       </div>
 
-      <div className="flex gap-2 pb-4 justify-center">
+      <div className="flex gap-2 justify-center">
         <div className="title text-white text-[24px] animate__animated animate__jackInTheBox">
           Seja bem-vindo à familia
         </div>
@@ -29,16 +29,15 @@ const App = () => {
         </div>
       </div>
 
-      <SocialMedia />
 
-      <div className="title-secondary text-white text-[20px] text-center p-4 animate__animated animate__jackInTheBox">
-        Temos um <span>convite</span> para você e uma mensagem para seu
-        <span> coração</span>
+      <div className="title-secondary text-white text-base text-center p-2 animate__animated animate__jackInTheBox">
+        Temos uma mensagem para seu <span>coração</span>
       </div>
 
       <div className="title text-center h-64 bg-white">VIDEO</div>
 
       <WorshipDate />
+      <SocialMedia />
       <Footer />
     </div>
   );
