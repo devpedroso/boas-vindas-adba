@@ -1,0 +1,37 @@
+.custom-video-player {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.video {
+  width: 100%;
+}
+
+.custom-controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.control-button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.volume-slider,
+.seek-slider {
+  width: 100px;
+}
+
+.time-display {
+  line-height: 30px;
+}

@@ -6,6 +6,7 @@ import { Image } from "antd";
 import SocialMedia from "./components/SocialMedia";
 import Footer from "./components/Footer";
 import WorshipDate from "./components/WorshipDate";
+import CustomVideoPlayer from "./components/Video";
 
 const App = () => {
   return (
@@ -38,13 +39,14 @@ const App = () => {
         controlsList="nodownload"
         disablePictureInPicture
         preload="auto"
-        autoPlay
-        muted
+        playsInline
       >
         <source src="/assets/VIDEO_PASTOR.mov" type="video/webm" />
         <source src="/assets/VIDEO_PASTOR.mp4" type="video/mp4" />
-        Seu browser não tem suporte para esse video.
+        Seu navegador não suporta vídeo HTML5.
       </video>
+
+      {/* <CustomVideoPlayer /> */}
 
       <WorshipDate />
       <SocialMedia />
