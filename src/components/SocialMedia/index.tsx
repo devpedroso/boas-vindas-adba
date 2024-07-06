@@ -5,7 +5,7 @@ import SocialMediaItem from "../SocialMediaItem";
 
 const SocialMedia = () => {
   return (
-    <AnimatedSection animate="animate__lightSpeedInRight animate__delay-0s">
+    <AnimatedSection animate="animate__zoomIn animate__delay-0s">
       <div className="flex flex-col items-center gap-5 text-white p-4">
         <div className="text-center animate__animated animate__bounceInLeft leading-[18px]">
           <div className="title text-[16px]">Siga nossas</div>
