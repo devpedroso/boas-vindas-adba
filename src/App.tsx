@@ -15,7 +15,7 @@ const App = () => {
           src="/assets/TAMO_JUNTO_LOGO.png"
           alt=""
           className="animate__animated animate__fadeInDown p-6"
-          width={92}
+          width={128}
           preview={false}
         />
       </div>

@@ -26,11 +26,16 @@ const WorshipDate = () => {
         <span className="text-3xl">Programação</span>
       </AnimatedSection>
 
-      <div className="flex flex-col gap-4 ">
-        {whorshipItem("TERÇA", "19:00", "Culto de Ensino")}
-        {whorshipItem("QUARTA", "19:30", "Quarta Power Adolescentes")}
-        {whorshipItem("SEXTA", "23:00", "Vigília")}
+      {whorshipItem("TERÇA", "19:00", "Culto de Ensino")}
+
+      <div className="flex flex-col gap-2">
+        {whorshipItem("QUARTA", "08:00", "Consagração Preciosas (Mulheres)")}
+        {whorshipItem("", "19:30", "Ensaio Preciosas (Mulheres)")}
+        {whorshipItem("", "19:30", "Quarta Power Adolescentes")}
       </div>
+
+      {whorshipItem("SEXTA", "23:00", "Vigília")}
+
       <div className="flex flex-col gap-2">
         {whorshipItem("DOMINGO", "9:00", "Escola Bíblica Dominical")}
         {whorshipItem("", "11:45", "Ensaio Geração Life")}
